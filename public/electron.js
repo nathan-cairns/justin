@@ -29,3 +29,5 @@ app.on("activate", () => {
         createWindow();
     }
 });
+
+mainWindow.setAlwaysOnTop("true");
