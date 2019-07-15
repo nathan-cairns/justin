@@ -7,7 +7,9 @@ const isDev = require("electron-is-dev");
 let mainWindow;
 
 function createWindow() {
-    mainWindow = new BrowserWindow({ width: 900, height: 680 });
+    mainWindow = new BrowserWindow({ width: 300, height: 300, alwaysOnTop: true, frame: false });
+    mainWindow.setResizable(false);
+
     mainWindow.loadURL(
         isDev 
         ? "http://localhost:3000"
@@ -29,5 +31,3 @@ app.on("activate", () => {
         createWindow();
     }
 });
-
-mainWindow.setAlwaysOnTop("true");
