@@ -2,7 +2,7 @@
   "name": "justin",
   "version": "0.1.0",
   "private": true,
-  "description": "",
+  "description": "last fm",
   "author": "Nathan Cairns",
   "build": {
     "appId": "justin"
@@ -27,7 +27,9 @@
     "build": "yarn react-build && yarn electron-build",
     "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\"",
     "lint": "./node_modules/eslint/bin/eslint.js ./src/",
-    "lint-fix": "./node_modules/eslint/bin/eslint.js ./src/ --fix"
+    "lint-fix": "./node_modules/eslint/bin/eslint.js ./src/ --fix",
+    "package-linux": "electron-packager . --overwrite  --platform linux --arch x64 --out dist/",
+    "create-debian-installer": " electron-installer-debian --src dist/justin-linux-x64/ --arch amd64 --config public/config.json"
   },
   "eslintConfig": {
     "extends": "react-app"
