@@ -11,11 +11,11 @@
   "homepage": "./",
   "dependencies": {
     "axios": "^0.19.0",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.0",
     "electron-is-dev": "^1.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "react-start": "react-scripts start",
@@ -47,15 +47,15 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^4.1.1",
-    "electron": "^5.0.6",
-    "electron-builder": "^21.0.15",
-    "eslint-config-standard": "^13.0.1",
+    "concurrently": "^5.1.0",
+    "electron": "^8.0.2",
+    "electron-builder": "^22.3.2",
+    "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-standard": "^4.0.0",
-    "wait-on": "^3.3.0"
+    "wait-on": "^4.0.1"
   }
 }
